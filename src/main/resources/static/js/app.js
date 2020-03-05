@@ -26,7 +26,7 @@ app.controller("todoController" , function($scope, $http){
 		
 		 $http({
              method : 'GET',
-             url : 'http://localhost:8081/todos/getAllTodos'
+             url : 'http://52.66.239.127:8081/todos/getAllTodos'
          }).then(function successCallback(response) {
              $scope.todos = response.data;
              
